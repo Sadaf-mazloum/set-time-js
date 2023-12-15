@@ -1,0 +1,5 @@
+.style-border{
+    display: inline-block;
+    border:5px dotted green;
+    border-radius: 10rem;
+}
