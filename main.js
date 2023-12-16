@@ -1,7 +1,7 @@
 function createCounter (container, start, end, duration) {
     var range = end - start;
     var current = start;
-    var stepTime = Math.abs (Math.floor (duration / range));
+    var stepTime = 1000 / range;
     var span = document.createElement ('span');
     span.className = 'num_tiles';
     container.appendChild (span);
@@ -18,6 +18,7 @@ function createCounter (container, start, end, duration) {
     var container2 = document.getElementById ('div2');
     var container3 = document.getElementById ('div3');
     
-    createCounter (container1, 0, 15, 3000);
-    createCounter (container2, 0, 260, 3000); 
-    createCounter (container3, 0, 27, 3000);
+
+    createCounter (container1, 0, 15, 1000); 
+    createCounter (container2, 0, 260, 1000); 
+    createCounter (container3, 0, 27, 1000); 
